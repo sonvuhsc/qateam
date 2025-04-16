@@ -1,14 +1,28 @@
 Feature: Sale platform homepage
+  # Background:
+  #   Given I visit the homepage
 
 
-  Scenario: Check display banner at the top
+  # Scenario: Check display banner at the top
+  #   Given I visit the homepage
+  #   Then I should see the banner displayed correctly
+
+  # Scenario: Check click "Bắt đầu ngay" button
+  #   Given I visit the homepage
+  #   Then I click on the "Bắt đầu ngay" button
+  #   Then I should navigate to new tab with url "https://one.hsc.com.vn/" incase not login
+
+
+
+  Scenario Outline: Login client SP
     Given I visit the homepage
-    Then I should see the banner displayed correctly
+    Then I login with "<username>" and "<password>" and otp "<otp>"
+    # Then Verify Error message is displayed
 
-  Scenario: Check click "Bắt đầu ngay" button
-    Given I visit the homepage
-    Then I click on the "Bắt đầu ngay" button
-    Then I should navigate to new tab with url "https://one.hsc.com.vn/" incase not login
+    Examples:
+      | username   | password | otp    |
+      | 011C862206 | 123456   | 123456 |
+
 
 
 
@@ -18,7 +32,7 @@ Feature: Sale platform homepage
 #     Then I should see the banner displayed correctly
 
 
-# @ipad 
+# @ipad
 #   Scenario: Check display banner at the top
 #     Given I visit the homepage
 #     Then I should see the banner displayed correctly

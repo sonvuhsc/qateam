@@ -45,3 +45,15 @@ Then("I should navigate to new tab with url {string} incase not login", async fu
     expect(actualUrl).toBe(expectedUrl);
 
 });
+
+
+Then('I login with {string} and {string} and otp {string}', { timeout: 100 * 1000 }, async function (username, password, otp) {
+
+    poManager = new POManager(this.page);
+    const homePage = poManager.getHomePage();
+    // await this.page.pause();
+    await homePage.clickLoginButton();
+    await homePage.validLogin(username, password, otp);
+    // await homePage.fillOtp(otp);
+
+});

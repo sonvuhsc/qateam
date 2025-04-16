@@ -4,43 +4,44 @@
     "elements": [
       {
         "description": "",
-        "id": "sale-platform-homepage;check-display-banner-at-the-top",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Check display banner at the top",
+        "id": "sale-platform-homepage;login-client-sp",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Login client SP",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 502165500
+              "duration": 562491100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 18,
             "name": "I visit the homepage",
             "match": {
               "location": "features\\step_definitions\\ClientSteps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 9256549799
+              "duration": 8320312400
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "I should see the banner displayed correctly",
+            "line": 19,
+            "name": "I login with \"011C862206\" and \"123456\" and otp \"123456\"",
             "match": {
-              "location": "features\\step_definitions\\ClientSteps.js:22"
+              "location": "features\\step_definitions\\ClientSteps.js:50"
             },
             "result": {
-              "status": "passed",
-              "duration": 479320199
+              "status": "failed",
+              "duration": 4050101999,
+              "error_message": "ReferenceError: page is not defined\n    at HomePage.validLogin (C:\\playwright\\PlayWrightAutomation\\PlayWrightAutomation\\pageobjects\\HomePage.js:35:9)\n    at async World.<anonymous> (C:\\playwright\\PlayWrightAutomation\\PlayWrightAutomation\\features\\step_definitions\\ClientSteps.js:56:5)"
             }
           },
           {
@@ -48,73 +49,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 177092200
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "sale-platform-homepage;check-click-\"bắt-đầu-ngay\"-button",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Check click \"Bắt đầu ngay\" button",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 519655800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "I visit the homepage",
-            "match": {
-              "location": "features\\step_definitions\\ClientSteps.js:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4921458999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I click on the \"Bắt đầu ngay\" button",
-            "match": {
-              "location": "features\\step_definitions\\ClientSteps.js:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 577105699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I should navigate to new tab with url \"https://one.hsc.com.vn/\" incase not login",
-            "match": {
-              "location": "features\\step_definitions\\ClientSteps.js:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1694589499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 233993599
+              "duration": 168107200
             }
           }
         ],
