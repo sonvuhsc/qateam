@@ -1,0 +1,132 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sale-platform-homepage;check-display-banner-at-the-top",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Check display banner at the top",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 502165500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\ClientSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9256549799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see the banner displayed correctly",
+            "match": {
+              "location": "features\\step_definitions\\ClientSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 479320199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 177092200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;check-click-\"bắt-đầu-ngay\"-button",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Check click \"Bắt đầu ngay\" button",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 519655800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\ClientSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4921458999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I click on the \"Bắt đầu ngay\" button",
+            "match": {
+              "location": "features\\step_definitions\\ClientSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 577105699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should navigate to new tab with url \"https://one.hsc.com.vn/\" incase not login",
+            "match": {
+              "location": "features\\step_definitions\\ClientSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1694589499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 233993599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sale-platform-homepage",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sale platform homepage",
+    "tags": [],
+    "uri": "features\\client.feature"
+  }
+]
