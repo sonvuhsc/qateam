@@ -12,31 +12,22 @@ jobs:
     timeout-minutes: 60
 
     steps:
-      # Step 1: Checkout code
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      # Step 2: Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18.x'   # Vì bạn khuyên dùng Node 18
+          node-version: '18.x'
 
-      # Step 3: Install npm dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Install Playwright Browsers
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      # Step 5: Run UI tests with Cucumber
-      - name: Run Playwright Cucumber tests (UI + API)
-        run: npm run test:report   # Hoặc npm run test:parallel nếu bạn muốn
+      - name: Run Playwright Cucumber tests
+        run: npm run test:report
 
-      # Step 6: Upload test report artifact
       - name: Upload Playwright HTML Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2  
         if: always()
         with:
           name: playwright-report
