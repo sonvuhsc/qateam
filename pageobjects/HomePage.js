@@ -29,18 +29,11 @@ class HomePage {
     }
 
 
-    async validLogin(username, password, otp) {
+    async validLogin(username, password) {
         await this.getUsernameTb.fill(username);
         await this.getPasswordTb.fill(password);
-        await page.waitForTimeout(500); // đợi JS xử lý
         await expect(this.getLoginButton).toBeEnabled();
         await this.getLoginButton.click();
-        await this.page.waitForLoadState('networkidle');
-        for (let i = 0; i < otp.length; i++) {
-            const inputId = `#${this.getInputOtp}-${i + 1}`;
-            await this.page.locator(inputId).fill(otp[i]);
-        }
-
     }
 
 

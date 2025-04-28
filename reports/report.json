@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 562491100
+              "duration": 474613600
             }
           },
           {
@@ -27,21 +27,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8320312400
+              "duration": 4320228699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 19,
-            "name": "I login with \"011C862206\" and \"123456\" and otp \"123456\"",
+            "name": "I login with \"011C862206\" and \"123456\"",
             "match": {
               "location": "features\\step_definitions\\ClientSteps.js:50"
             },
             "result": {
-              "status": "failed",
-              "duration": 4050101999,
-              "error_message": "ReferenceError: page is not defined\n    at HomePage.validLogin (C:\\playwright\\PlayWrightAutomation\\PlayWrightAutomation\\pageobjects\\HomePage.js:35:9)\n    at async World.<anonymous> (C:\\playwright\\PlayWrightAutomation\\PlayWrightAutomation\\features\\step_definitions\\ClientSteps.js:56:5)"
+              "status": "passed",
+              "duration": 6631124299
             }
           },
           {
@@ -49,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 168107200
+              "duration": 250255600
             }
           }
         ],

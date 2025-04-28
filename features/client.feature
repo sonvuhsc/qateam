@@ -16,12 +16,12 @@ Feature: Sale platform homepage
 
   Scenario Outline: Login client SP
     Given I visit the homepage
-    Then I login with "<username>" and "<password>" and otp "<otp>"
+    Then I login with "<username>" and "<password>"
     # Then Verify Error message is displayed
 
     Examples:
-      | username   | password | otp    |
-      | 011C862206 | 123456   | 123456 |
+      | username   | password |
+      | 011C862206 | 123456   |
 
 
 
