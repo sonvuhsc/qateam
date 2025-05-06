@@ -8,8 +8,7 @@ class HomePage {
         this.getLoginButton = page.getByRole('button', { name: 'Đăng nhập' });
         this.getUsernameTb = page.getByRole('textbox', { name: 'Mã khách hàng' });
         this.getPasswordTb = page.getByRole('textbox', { name: 'Mật khẩu' });
-        this.getInputOtp = page.locator('#mantine-pv7yh696q');
-
+        this.getInputOtp = page.locator('[aria-label="PinInput"]');
     }
 
     async verifyBanner() {
@@ -23,20 +22,29 @@ class HomePage {
         console.log('Button text:', text);
         await this.getStartButton.click();
     }
-
     async clickLoginButton() {
         await this.getLoginButton.click();
     }
 
-
-    async validLogin(username, password) {
-        await this.getUsernameTb.fill(username);
-        await this.getPasswordTb.fill(password);
-        await expect(this.getLoginButton).toBeEnabled();
+    async validLogin(username, password, otp) {
+        await this.getUsernameTb.type(username, { delay: 200 });
+        await this.page.waitForTimeout(300);
+        await this.getPasswordTb.type(password, { delay: 200 });
+        await this.page.waitForTimeout(300);
+        // Log trạng thái
+        console.log('Checking button status...');
+        console.log(await this.getLoginButton.getAttribute('disabled'));
+        await expect(this.getLoginButton).toBeEnabled({ timeout: 5000 });
         await this.getLoginButton.click();
+        await this.page.waitForTimeout(300);
+        // check otp is visible or not to input
+        if (await this.getInputOtp.first().isVisible()) {
+            for (let i = 0; i < otp.length; i++) {
+                await this.getInputOtp.nth(i).fill(otp[i]);
+            }
+        } else {
+            console.log('OTP input not visible, skipping OTP input.');
+        }
     }
-
-
-
 }
 module.exports = { HomePage };

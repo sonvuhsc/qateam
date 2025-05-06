@@ -5,7 +5,7 @@ const path = require("path")
 let poManager
 const playwright = require('@playwright/test');
 const { test, expect } = require('@playwright/test');
-const { POManager } = require('../../pageobjects/POManager');
+const { POManager } = require('../../../pageobjects/POManager');
 const assert = require("assert")
 const binDir = path.resolve(__dirname, "../../bin")
 console.log(binDir)
@@ -39,7 +39,7 @@ Then('I click on the {string} button', async function (getStart) {
 
 });
 
-Then("I should navigate to new tab with url {string} incase not login", async function (expectedUrl) {
+Then("I should navigate to new tab with url {string} in case not login", async function (expectedUrl) {
     await this.newPage.waitForLoadState('domcontentloaded');
     const actualUrl = this.newPage.url();
     expect(actualUrl).toBe(expectedUrl);
@@ -47,13 +47,14 @@ Then("I should navigate to new tab with url {string} incase not login", async fu
 });
 
 
-Then('I login with {string} and {string}', { timeout: 100 * 1000 }, async function (username, password) {
-
+Then('I login with {string} and {string} and {string}', { timeout: 100 * 1000 }, async function (username, password, otp) {
     poManager = new POManager(this.page);
     const homePage = poManager.getHomePage();
-    // await this.page.pause();
     await homePage.clickLoginButton();
-    await homePage.validLogin(username, password);
-    // await homePage.fillOtp(otp);
+    await homePage.validLogin(username, password, otp);
+});
 
+Then('I should see the menu item {string}', { timeout: 100 * 1000 }, async function (menuItem) {
+    const locator = this.page.locator(`text="${menuItem}"`);
+    await expect((locator).first()).toBeVisible();
 });
