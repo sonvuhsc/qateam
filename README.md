@@ -4,7 +4,7 @@ Dự án này sử dụng **Playwright** để kiểm thử giao diện (UI) và
 
 ---
 
-## 💻 Yêu cầu hệ thống
+## Yêu cầu hệ thống
 
 - ✅ Node.js >= 16.x (khuyên dùng Node.js 18.x)
 - ✅ npm (đi kèm với Node)
@@ -12,7 +12,7 @@ Dự án này sử dụng **Playwright** để kiểm thử giao diện (UI) và
 
 ---
 
-## 🚀 Cài đặt và khởi tạo project
+## Cài đặt và khởi tạo project
 
 ### 1. Clone project từ GitHub
 
@@ -35,13 +35,13 @@ npm install --save-dev @cucumber/cucumber
 1. Cucumber ( Gherkin ) Full
 
 
-## ▶️ Cách chạy test UI
+## Cách chạy test UI
 npm run test:parallel   # nếu muốn chạy parallel các scenario cùng 1 lúc
 npm run test:report     # nếu muốn chạy test tuần tự các testcase và sau đó xuất ra report
 npm run test    # nếu muốn chỉ chạy test không xuất report
 npm run report  # nếu muốn chỉ xuất report
 
-## ▶️ Cách chạy test API
+## Cách chạy test API
 npx playwright test tests/api
 
 ## Cấu trúc thư mục

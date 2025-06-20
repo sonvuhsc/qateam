@@ -58,3 +58,9 @@ Feature: Sale platform homepage
   Scenario: Check display banner at the top
     Given I visit the homepage
     Then I should see the banner displayed correctly
+
+
+  @footer
+  Scenario: Check footer display at the bottom
+    Given I visit the homepage
+    Then I should see the footer displayed correctly

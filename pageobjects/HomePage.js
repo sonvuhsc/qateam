@@ -9,6 +9,8 @@ class HomePage {
         this.getUsernameTb = page.getByRole('textbox', { name: 'Mã khách hàng' });
         this.getPasswordTb = page.getByRole('textbox', { name: 'Mật khẩu' });
         this.getInputOtp = page.locator('[aria-label="PinInput"]');
+        this.footerHomePage = page.locator('div').filter({ hasText: 'CÔNG TY CỔ PHẦN CHỨNG KHOÁN THÀNH PHỐ HỒ CHÍ MINHTrụ sở:Tầng 2,5,6,7,11 và 12 T' }).nth(3);
+
     }
 
     async verifyBanner() {
@@ -45,6 +47,11 @@ class HomePage {
         } else {
             console.log('OTP input not visible, skipping OTP input.');
         }
+    }
+    
+    async verifyFooter() {
+        await expect(this.footerHomePage).toBeVisible();
+        console.log('Check footer display');
     }
 }
 module.exports = { HomePage };

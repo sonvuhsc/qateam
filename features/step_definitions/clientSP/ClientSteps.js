@@ -20,12 +20,10 @@ Given('I visit the homepage', { timeout: 20000 }, async function () {
 });
 
 Then('I should see the banner displayed correctly', async function () {
-
     poManager = new POManager(this.page);
     const homePage = poManager.getHomePage();
     // await this.page.pause();
     await homePage.verifyBanner();
-
 });
 
 Then('I click on the {string} button', async function (getStart) {
@@ -36,17 +34,16 @@ Then('I click on the {string} button', async function (getStart) {
         context.waitForEvent('page'),
         homePage.clickGetStartButton(getStart)
     ]);
-
 });
 
+// Check url navigate
 Then("I should navigate to new tab with url {string} in case not login", async function (expectedUrl) {
     await this.newPage.waitForLoadState('domcontentloaded');
     const actualUrl = this.newPage.url();
     expect(actualUrl).toBe(expectedUrl);
-
 });
 
-
+// Check login
 Then('I login with {string} and {string} and {string}', { timeout: 100 * 1000 }, async function (username, password, otp) {
     poManager = new POManager(this.page);
     const homePage = poManager.getHomePage();
@@ -54,7 +51,16 @@ Then('I login with {string} and {string} and {string}', { timeout: 100 * 1000 },
     await homePage.validLogin(username, password, otp);
 });
 
+// Check menu display
 Then('I should see the menu item {string}', { timeout: 100 * 1000 }, async function (menuItem) {
     const locator = this.page.locator(`text="${menuItem}"`);
     await expect((locator).first()).toBeVisible();
+});
+
+// Check footer display
+Then('I should see the footer displayed correctly', async function () {
+    poManager = new POManager(this.page);
+    const homePage = poManager.getHomePage();
+    // await this.page.pause();
+    await homePage.verifyFooter();
 });
