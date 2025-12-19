@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
     "test": "npx cucumber-js --format json:reports/report.json",
     "test:parallel": "npx cucumber-js --parallel 2 --format json:reports/report.json",
     "report": "ts-node generate-report.ts",
@@ -18,8 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@azure/microsoft-playwright-testing": "^1.0.0-beta.6",
-    "@cucumber/cucumber": "*",
+    "@cucumber/cucumber": "^12.2.0",
     "@playwright/test": "^1.51.0",
     "@zerostep/playwright": "^0.1.5",
     "allure-playwright": "^2.0.0-beta.15",

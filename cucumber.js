@@ -1,5 +1,6 @@
 module.exports = {
-  default: "--publish-quiet",
+  // default: "--publish-quiet",
+  default: "",
 }
 // npx cucumber-js features/client.feature --exit
 //npx cucumber-js features/ErrorValidation.feature --exit

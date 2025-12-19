@@ -3,7 +3,7 @@ const { expect } = require("@playwright/test");
 class HomePage {
     constructor(page) {
         this.page = page;
-        this.bannerHomePage = page.locator('.my-auto');
+        this.bannerHomePage = page.getByTestId('hero-section-container');
         this.getStartButton = page.getByRole('button', { name: 'Bắt đầu ngay' });
         this.getLoginButton = page.getByRole('button', { name: 'Đăng nhập' });
         this.getUsernameTb = page.getByRole('textbox', { name: 'Mã khách hàng' });

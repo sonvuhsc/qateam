@@ -20,8 +20,10 @@ const config = {
     headless : true,
     screenshot : 'on',
     trace : 'on',//off,on
-    
-    
+    // HD - Laptop
+    // viewport: { width: 1280, height: 720 }, // <-- This is your current setting
+    // Full HD
+
     
   },
 

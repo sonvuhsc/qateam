@@ -10,27 +10,30 @@ Before(async function (scenario) {
 
   if (tags.includes('@iphone13')) {
     deviceConfig = devices['iPhone 13'];
-    console.log('📱 Using iPhone 13 config');
+    console.log('Using iPhone 13 config');
   } else if (tags.includes('@pixel')) {
     deviceConfig = devices['Pixel 5'];
-    console.log('📱 Using Pixel 5 config');
+    console.log('Using Pixel 5 config');
   }else if (tags.includes('@ipad')) {
     deviceConfig = devices['iPad Mini'];
-    console.log('📱 Using iPad Mini config');
+    console.log('Using iPad Mini config');
   }
 
 
   if (tags.includes('@edge')) {
     executablePath = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
-    console.log('🌐 Running on Microsoft Edge');
+    console.log('Running on Microsoft Edge');
   } else if (tags.includes('@chrome')) {
-    console.log('🌐 Running on Google Chrome');
+    console.log('Running on Google Chrome');
   }
 
 
-  const browser = await playwright.chromium.launch({ headless: true });
+  const browser = await playwright.chromium.launch({ headless: false });
   const context = await browser.newContext({
-    ...(deviceConfig || {}) // use device emulation if matched
+        viewport: { width: 1920, height: 1080 } // Full HD
+        // viewport: { width: 1280, height: 720 } // HD - Laptop
+
+    // ...(deviceConfig || {}) // use device emulation if matched
   });
 
   this.browser = browser;
@@ -52,8 +55,7 @@ AfterStep(async function ({ result }) {
 });
 After(async function () {
   // Assuming this.driver is a selenium webdriver
-  console.log("i am last");
-
+  console.log("Completed running the scenario");
   await this.page?.close();
   await this.context?.close();
   await this.browser?.close();
