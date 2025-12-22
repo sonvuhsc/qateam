@@ -27,27 +27,26 @@ Feature: Sale platform homepage
     Then the "<menu>" menu should have submenu "<submenu>"
 
     Examples:
-      | menu               | submenu                           |
-      | Sản phẩm & Dịch vụ | Tổng quan                        |
-      | Sản phẩm & Dịch vụ | Cổ phiếu                          |
-      | Sản phẩm & Dịch vụ | Phái sinh                        |
-      | Sản phẩm & Dịch vụ | Chứng quyền có bảo đảm       |
-      | Sản phẩm & Dịch vụ | ETFs                              |
-      | Tư vấn đầu tư      | Giới thiệu hành trình đầu tư |
-      | Tư vấn đầu tư      | Thống kê thị trường               |
-      | Tư vấn đầu tư      | Lịch sự kiện                      |
-      | Tư vấn đầu tư      | Tổng hợp báo cáo                  |
-      | Tư vấn đầu tư      | HSC Videos                        |
-      | Tư vấn đầu tư      | Nhận định thị trường          |
-      | Tư vấn đầu tư      | Phân tích doanh nghiệp          |
-      | Tư vấn đầu tư      | Danh mục khuyến nghị           |
-      | Tin tức & Sự kiện  | Trang chủ                        |
-      | Tin tức & Sự kiện  | Tự học chứng khoán            |
-      | Tin tức & Sự kiện  | Tự tin giao dịch                |
-      | Tin tức & Sự kiện  | Nghiền ngẫm                     |
-      | Tin tức & Sự kiện  | Tổng quan                        |
-      | Tin tức & Sự kiện  | C2C - Connecting to Customers     |
-      | Tin tức & Sự kiện  | C2C - Connecting to C-level       |
+      | menu              | submenu                           |
+      | Sản phẩm          | Cổ phiếu                          |
+      | Sản phẩm          | Phái sinh                        |
+      | Sản phẩm          | Chứng quyền có bảo đảm       |
+      | Sản phẩm          | ETFs                              |
+      | Tư vấn đầu tư     | Giới thiệu hành trình đầu tư |
+      | Tư vấn đầu tư     | Thống kê thị trường               |
+      | Tư vấn đầu tư     | Lịch sự kiện                      |
+      | Tư vấn đầu tư     | Tổng hợp báo cáo                  |
+      | Tư vấn đầu tư     | HSC Videos                        |
+      | Tư vấn đầu tư     | Nhận định thị trường          |
+      | Tư vấn đầu tư     | Phân tích doanh nghiệp          |
+      | Tư vấn đầu tư     | Danh mục khuyến nghị           |
+      | Tin tức & Sự kiện | Trang chủ                        |
+      | Tin tức & Sự kiện | Tự học chứng khoán            |
+      | Tin tức & Sự kiện | Tự tin giao dịch                |
+      | Tin tức & Sự kiện | Nghiền ngẫm                     |
+      | Tin tức & Sự kiện | Tổng quan                        |
+      | Tin tức & Sự kiện | C2C - Connecting to Customers     |
+      | Tin tức & Sự kiện | C2C - Connecting to C-level       |
 
   @congcu
   Scenario: Verify menu Công cụ

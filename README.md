@@ -34,16 +34,6 @@ npm install --save-dev @cucumber/cucumber
 ## Cài đặt Extensions
 1. Cucumber ( Gherkin ) Full
 
-
-## Cách chạy test UI
-npm run test:parallel   # nếu muốn chạy parallel các scenario cùng 1 lúc
-npm run test:report     # nếu muốn chạy test tuần tự các testcase và sau đó xuất ra report
-npm run test    # nếu muốn chỉ chạy test không xuất report
-npm run report  # nếu muốn chỉ xuất report
-
-## Cách chạy test API
-npx playwright test tests/api
-
 ## Cấu trúc thư mục
 project-root/
 ├── features/                  # BDD feature files (.feature)
@@ -57,3 +47,57 @@ project-root/
 ├── playwright.config.js       # Cấu hình cho Playwright
 ├── package.json               # Chứa các dependencies đã cài đặt, các scripts để run test
 └── README.md                  # Tài liệu này
+---
+
+## Chạy kiểm thử
+
+### Chế độ Headless (mặc định - không hiển thị trình duyệt)
+Chạy kiểm thử mà không mở cửa sổ trình duyệt (phù hợp cho CI/CD):
+
+```bash
+npm run test
+# hoặc
+npm run test:report # nếu muốn chạy test tuần tự các testcase và sau đó xuất ra report - staging (default)
+```
+
+### Chế độ Non-Headless (hiển thị trình duyệt)
+Chạy kiểm thử với cửa sổ trình duyệt hiển thị (dễ debug):
+
+```bash
+# Sử dụng biến môi trường để tắt headless
+$env:HEADLESS = "false"; npm run test
+# hoặc cho báo cáo
+$env:HEADLESS = "false"; npm run test:report
+```
+
+### Chạy với môi trường khác nhau
+- **Staging:**
+  ```bash
+  $env:NODE_ENV = "staging"; npm run test
+  ```
+- **Production:**
+  ```bash
+  $env:NODE_ENV = "production"; npm run test
+  ```
+
+### Chạy kiểm thử cụ thể
+- Chạy theo tag:
+  ```bash
+  npx cucumber-js --tags "@menu"
+  ```
+- Chạy file feature cụ thể:
+  ```bash
+  npx cucumber-js features/clientSP/homepage.feature
+  ```
+
+## Cách chạy parallel
+npm run test:parallel   # nếu muốn chạy parallel các scenario cùng 1 lúc
+---
+
+## Cách chạy test API
+npx playwright test tests/api
+
+## Ghi chú
+- Mặc định chạy ở chế độ headless để tối ưu hiệu suất.
+- Sử dụng chế độ non-headless khi cần debug hoặc xem hành vi của test.
+- Kiểm tra `playwright.config.js` và `features/support/hooks.js` để tùy chỉnh cấu hình.

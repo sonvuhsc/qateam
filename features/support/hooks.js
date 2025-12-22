@@ -28,7 +28,9 @@ Before(async function (scenario) {
   }
 
 
-  const browser = await playwright.chromium.launch({ headless: false });
+  const browser = await playwright.chromium.launch({ 
+    headless: process.env.HEADLESS !== 'false' // Default true (headless), set to 'false' for non-headless
+  });
   const context = await browser.newContext({
         viewport: { width: 1920, height: 1080 } // Full HD
         // viewport: { width: 1280, height: 720 } // HD - Laptop
