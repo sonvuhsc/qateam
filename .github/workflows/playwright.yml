@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
@@ -27,7 +27,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright Cucumber tests
-        run: npm run test:report
+        run: $env:NODE_ENV = "production"; npm run test
 
       - name: Move HTML Report to default location
         if: always()
