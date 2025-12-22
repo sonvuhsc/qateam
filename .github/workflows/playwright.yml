@@ -27,7 +27,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright Cucumber tests
-        run: npm run test:report
+        run: $env:NODE_ENV = "production"; npm run test
 
       - name: Move HTML Report to default location
         if: always()
