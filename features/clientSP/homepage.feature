@@ -4,22 +4,8 @@ Feature: Sale platform homepage
   # Scenario: Check display banner at the top
   #   Given I visit the homepage
   #   Then I should see the banner displayed correctly
-
-  # @banner
-  # Scenario: Check click "Bắt đầu ngay" button
-  #   Given I visit the homepage
-  #   Then I click on the "Bắt đầu ngay" button
-  #   Then I should navigate to new tab with url "https://one.hsc.com.vn/" in case not login
-
-  # @login
-  # Scenario Outline: Login client SP
-  #   Given I visit the homepage
-  #   Then I login with "<username>" and "<password>" and "<otp>"
-
-  #   Examples:
-  #     | username   | password | otp    |
-  #     | 011C030272 | 123456   | 123456 |
-
+  @production
+  @staging
   @menu
   Scenario Outline: Sidebar should display menu item "<menu>"
     Given I visit the homepage
@@ -48,6 +34,8 @@ Feature: Sale platform homepage
       | Tin tức & Sự kiện | C2C - Connecting to Customers     |
       | Tin tức & Sự kiện | C2C - Connecting to C-level       |
 
+  @production
+  @staging
   @congcu
   Scenario: Verify menu Công cụ
     Given I visit the homepage
@@ -55,6 +43,12 @@ Feature: Sale platform homepage
     Then I verify ONE Pro menu opens new tab
     Then I verify Winner Trade menu opens new tab
 
+  @production
+  @staging
+  @footer
+  Scenario: Check footer display at the bottom
+    Given I visit the homepage
+    Then I should see the footer displayed correctly
 
 # @iphone13
 # Scenario: Check display banner at the top
@@ -66,9 +60,3 @@ Feature: Sale platform homepage
 # Scenario: Check display banner at the top
 #   Given I visit the homepage
 #   Then I should see the banner displayed correctly
-
-
-# @footer
-# Scenario: Check footer display at the bottom
-#   Given I visit the homepage
-#   Then I should see the footer displayed correctly

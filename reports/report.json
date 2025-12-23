@@ -1,0 +1,1672 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"sản-phẩm\"",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Sidebar should display menu item \"Sản phẩm\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 620427300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1285972400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Sản phẩm\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1910072900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Sản phẩm\" menu should have submenu \"Cổ phiếu\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3022763299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1063310700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"sản-phẩm\"",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Sidebar should display menu item \"Sản phẩm\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 569877399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1406728598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Sản phẩm\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1897123199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Sản phẩm\" menu should have submenu \"Phái sinh\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2489814900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 271625400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"sản-phẩm\"",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Sidebar should display menu item \"Sản phẩm\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 585304700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1461951899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Sản phẩm\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1931013300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Sản phẩm\" menu should have submenu \"Chứng quyền có bảo đảm\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3735591500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 315828000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"sản-phẩm\"",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Sidebar should display menu item \"Sản phẩm\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 614651500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1265566199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Sản phẩm\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1919732599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Sản phẩm\" menu should have submenu \"ETFs\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2553982699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 274017899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tư-vấn-đầu-tư\"",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Sidebar should display menu item \"Tư vấn đầu tư\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 563706299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1292841798
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tư vấn đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1917766399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tư vấn đầu tư\" menu should have submenu \"Giới thiệu hành trình đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3302980898
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 230409899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tư-vấn-đầu-tư\"",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Sidebar should display menu item \"Tư vấn đầu tư\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 659856800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1530981800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tư vấn đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 939494998
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tư vấn đầu tư\" menu should have submenu \"Thống kê thị trường\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2883310500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 246776499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tư-vấn-đầu-tư\"",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Sidebar should display menu item \"Tư vấn đầu tư\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 572089500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1332924899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tư vấn đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1905256898
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tư vấn đầu tư\" menu should have submenu \"Lịch sự kiện\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3042248799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 234834900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tư-vấn-đầu-tư\"",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Sidebar should display menu item \"Tư vấn đầu tư\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 642281300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2244850700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tư vấn đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126450300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tư vấn đầu tư\" menu should have submenu \"Tổng hợp báo cáo\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3129611499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 223281699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tư-vấn-đầu-tư\"",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Sidebar should display menu item \"Tư vấn đầu tư\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 609830700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2524625298
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tư vấn đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 909471500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tư vấn đầu tư\" menu should have submenu \"HSC Videos\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3252399899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 260063399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tư-vấn-đầu-tư\"",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Sidebar should display menu item \"Tư vấn đầu tư\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 577130699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1226761800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tư vấn đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1905424399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tư vấn đầu tư\" menu should have submenu \"Nhận định thị trường\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3134153298
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 358609700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tư-vấn-đầu-tư\"",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Sidebar should display menu item \"Tư vấn đầu tư\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 673448300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1768203098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tư vấn đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 906828498
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tư vấn đầu tư\" menu should have submenu \"Phân tích doanh nghiệp\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2954843099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 277182899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tư-vấn-đầu-tư\"",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "Sidebar should display menu item \"Tư vấn đầu tư\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 616039600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 802767400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tư vấn đầu tư\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2007476299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tư vấn đầu tư\" menu should have submenu \"Danh mục khuyến nghị\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3152609699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 251237099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tin-tức-&-sự-kiện\"",
+        "keyword": "Scenario Outline",
+        "line": 29,
+        "name": "Sidebar should display menu item \"Tin tức & Sự kiện\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 573433000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 772806299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tin tức & Sự kiện\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2012426499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tin tức & Sự kiện\" menu should have submenu \"Trang chủ\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3081156998
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 239277799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tin-tức-&-sự-kiện\"",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Sidebar should display menu item \"Tin tức & Sự kiện\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 599666299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1335598899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tin tức & Sự kiện\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1907622399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tin tức & Sự kiện\" menu should have submenu \"Tự học chứng khoán\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2928769498
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 307323300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tin-tức-&-sự-kiện\"",
+        "keyword": "Scenario Outline",
+        "line": 31,
+        "name": "Sidebar should display menu item \"Tin tức & Sự kiện\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 804656700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1348171398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tin tức & Sự kiện\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1900815099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tin tức & Sự kiện\" menu should have submenu \"Tự tin giao dịch\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1825732399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 255296200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tin-tức-&-sự-kiện\"",
+        "keyword": "Scenario Outline",
+        "line": 32,
+        "name": "Sidebar should display menu item \"Tin tức & Sự kiện\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 618648700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1198284199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tin tức & Sự kiện\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1916156299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tin tức & Sự kiện\" menu should have submenu \"Nghiền ngẫm\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1613184299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 259612800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tin-tức-&-sự-kiện\"",
+        "keyword": "Scenario Outline",
+        "line": 33,
+        "name": "Sidebar should display menu item \"Tin tức & Sự kiện\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 639473299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1513742498
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tin tức & Sự kiện\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 911328198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tin tức & Sự kiện\" menu should have submenu \"Tổng quan\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2875986898
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 248468199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tin-tức-&-sự-kiện\"",
+        "keyword": "Scenario Outline",
+        "line": 34,
+        "name": "Sidebar should display menu item \"Tin tức & Sự kiện\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 533351899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 673040599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tin tức & Sự kiện\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2165608800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tin tức & Sự kiện\" menu should have submenu \"C2C - Connecting to Customers\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2922269098
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 261681599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;sidebar-should-display-menu-item-\"tin-tức-&-sự-kiện\"",
+        "keyword": "Scenario Outline",
+        "line": 35,
+        "name": "Sidebar should display menu item \"Tin tức & Sự kiện\"",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 652187399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1231393599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the menu item \"Tin tức & Sự kiện\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:181"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1926671799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the \"Tin tức & Sự kiện\" menu should have submenu \"C2C - Connecting to C-level\"",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2888119898
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 230674100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 7
+          },
+          {
+            "name": "@staging",
+            "line": 8
+          },
+          {
+            "name": "@menu",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;verify-menu-công-cụ",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Verify menu Công cụ",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 610318399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1391759598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "I verify ONE Trading menu works correctly",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3332757499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "I verify ONE Pro menu opens new tab",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3067058699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "I verify Winner Trade menu opens new tab",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:139"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3848194600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 345738199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 37
+          },
+          {
+            "name": "@staging",
+            "line": 38
+          },
+          {
+            "name": "@congcu",
+            "line": 39
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sale-platform-homepage;check-footer-display-at-the-bottom",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Check footer display at the bottom",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 582010600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "I visit the homepage",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1405509900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "I should see the footer displayed correctly",
+            "match": {
+              "location": "features\\step_definitions\\clientSP\\homepage.steps.js:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1915602700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 255306100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@production",
+            "line": 46
+          },
+          {
+            "name": "@staging",
+            "line": 47
+          },
+          {
+            "name": "@footer",
+            "line": 48
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sale-platform-homepage",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sale platform homepage",
+    "tags": [],
+    "uri": "features\\clientSP\\homepage.feature"
+  }
+]

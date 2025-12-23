@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js --format json:reports/report.json",
+    "test:staging": "cross-env NODE_ENV=staging npx cucumber-js --format json:reports/report.json",
+    "test:production": "cross-env NODE_ENV=production npx cucumber-js --format json:reports/report.json",
     "test:parallel": "npx cucumber-js --parallel 2 --format json:reports/report.json",
     "report": "ts-node generate-report.ts",
-    "test:report": "npm run test && npm run report",
+    "test:report:staging": "cross-env NODE_ENV=staging npm run test && npm run report",
+    "test:report:production": "cross-env NODE_ENV=production npm run test && npm run report",
     "regression": "npx playwright test",
     "webTests": "npx playwright test --grep @Web",
     "APITests": "npx playwright test --grep @API",
@@ -21,6 +23,7 @@
     "@playwright/test": "^1.51.0",
     "@zerostep/playwright": "^0.1.5",
     "allure-playwright": "^2.0.0-beta.15",
+    "cross-env": "^10.1.0",
     "cucumber-html-reporter": "^7.2.0",
     "typescript": "^5.4.5"
   },
