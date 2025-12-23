@@ -5,12 +5,12 @@ class HomePage {
         this.page = page;
         this.bannerHomePage = page.getByTestId('hero-section-container');
         this.getStartButton = page.getByRole('button', { name: 'Bắt đầu ngay' });
-        this.getLoginButton = page.getByRole('button', { name: 'Đăng nhập' });
-        this.getUsernameTb = page.getByRole('textbox', { name: 'Mã khách hàng' });
-        this.getPasswordTb = page.getByRole('textbox', { name: 'Mật khẩu' });
+        this.getUsernameTb = page.getByTestId('login-username-input');
+        this.getPasswordTb = page.getByTestId('login-password-input');
+        this.getLoginButton = page.getByTestId('login-submit-button');
         this.getInputOtp = page.locator('[aria-label="PinInput"]');
-        this.footerHomePage = page.locator('div').filter({ hasText: 'CÔNG TY CỔ PHẦN CHỨNG KHOÁN THÀNH PHỐ HỒ CHÍ MINHTrụ sở:Tầng 2,5,6,7,11 và 12 T' }).nth(3);
-
+        this.getTuVanLabel = page.getByRole('button', { name: 'Tư vấn' });
+        this.footerHomePage = page.locator('#footer div').filter({ hasText: 'CÔNG TY CỔ PHẦN CHỨNG KHOÁNTHÀNH PHỐ HỒ CHÍ MINHTrụ sở chính:Tầng 2,3,5,6,7,11' }).first();
     }
 
     async verifyBanner() {
@@ -24,11 +24,12 @@ class HomePage {
         console.log('Button text:', text);
         await this.getStartButton.click();
     }
-    async clickLoginButton() {
-        await this.getLoginButton.click();
-    }
+    // async clickLoginButton() {
+    //     await this.getLoginButton.click();
+    // }
 
     async validLogin(username, password, otp) {
+        // await this.page.pause();
         await this.getUsernameTb.type(username, { delay: 200 });
         await this.page.waitForTimeout(300);
         await this.getPasswordTb.type(password, { delay: 200 });
@@ -48,7 +49,18 @@ class HomePage {
             console.log('OTP input not visible, skipping OTP input.');
         }
     }
-    
+    // Click button Tu van to navigate back ONE Advisory page
+    async clickTuVanButton() {
+        await this.getTuVanLabel.click();
+    }
+
+    //validate after logged in
+    async verifyAfterLoggedIn() {
+        console.log('Verify after logged in...');
+        await expect(this.getUsernameTb).not.toBeVisible();
+        await expect(this.getPasswordTb).not.toBeVisible();
+    }
+
     async verifyFooter() {
         await expect(this.footerHomePage).toBeVisible();
         console.log('Check footer display');

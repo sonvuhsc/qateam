@@ -4,10 +4,8 @@ const devices = playwright.devices;
 
 Before(async function (scenario) {
   console.log('Before scenario:', scenario.pickle.name);
-
   const tags = scenario.pickle.tags.map(t => t.name.toLowerCase());
   let deviceConfig = null;
-
   if (tags.includes('@iphone13')) {
     deviceConfig = devices['iPhone 13'];
     console.log('Using iPhone 13 config');
@@ -18,32 +16,24 @@ Before(async function (scenario) {
     deviceConfig = devices['iPad Mini'];
     console.log('Using iPad Mini config');
   }
-
-
   if (tags.includes('@edge')) {
     executablePath = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
     console.log('Running on Microsoft Edge');
   } else if (tags.includes('@chrome')) {
     console.log('Running on Google Chrome');
   }
-
-
   const browser = await playwright.chromium.launch({ 
     headless: process.env.HEADLESS !== 'false' // Default true (headless), set to 'false' for non-headless
   });
   const context = await browser.newContext({
-        viewport: { width: 1920, height: 1080 } // Full HD
-        // viewport: { width: 1280, height: 720 } // HD - Laptop
-
+        // viewport: { width: 1920, height: 1080 } // Full HD
+        viewport: { width: 1280, height: 720 } // HD - Laptop
     // ...(deviceConfig || {}) // use device emulation if matched
   });
-
   this.browser = browser;
   this.context = context;
   this.page = await context.newPage();
 });
-
-
 AfterStep(async function ({ result }) {
   // This hook will be executed after all steps, and take a screenshot on step failure
   if (result.status === Status.FAILED) {
@@ -52,7 +42,6 @@ AfterStep(async function ({ result }) {
     await this.page.screenshot({ path: `screenshots/${deviceName}.png` });
     this.attach(buffer.toString('base64'), 'base64:image/png');
     console.log("Screenshot logged")
-
   }
 });
 After(async function () {
@@ -61,7 +50,4 @@ After(async function () {
   await this.page?.close();
   await this.context?.close();
   await this.browser?.close();
-
 });
-
-
