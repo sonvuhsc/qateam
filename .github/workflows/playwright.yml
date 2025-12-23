@@ -31,7 +31,7 @@ jobs:
         with:
           timeout_minutes: 20
           max_attempts: 2
-          command: export NODE_ENV=production && npx cucumber-js --tags "@production" --format json:reports/report.json && npm run report
+          command: export NODE_ENV=production HEADLESS=true && npx cucumber-js --tags "@production" --format json:reports/report.json && npm run report
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
