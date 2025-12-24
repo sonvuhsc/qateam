@@ -2,7 +2,7 @@
   "cookies": [],
   "origins": [
     {
-      "origin": "https://sp-sit.hsc.com.vn/",
+      "origin": "https://one-stg.hsc.com.vn/sp",
       "localStorage": [
         {
           "name": "token",
