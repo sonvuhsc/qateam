@@ -2,7 +2,9 @@ name: Playwright + Cucumber + API Testing
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, staging ]
+  schedule:
+    - cron: '0 7 * * *'  # Daily at 7 AM UTC
   pull_request:
     branches: [ main, master ]
 
@@ -26,7 +28,26 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright Cucumber tests with retry
+      - name: Set test environment
+        run: |
+          if [ "${{ github.ref }}" = "refs/heads/staging" ]; then
+            echo "NODE_ENV=staging" >> $GITHUB_ENV
+            echo "TEST_TAGS=@staging" >> $GITHUB_ENV
+          else
+            echo "NODE_ENV=production" >> $GITHUB_ENV
+            echo "TEST_TAGS=@production" >> $GITHUB_ENV
+          fi
+
+      - name: Run staging tests
+        if: github.ref == 'refs/heads/staging'
+        uses: nick-invision/retry@v2
+        with:
+          timeout_minutes: 20
+          max_attempts: 2
+          command: export NODE_ENV=staging HEADLESS=true && npx cucumber-js --format json:reports/report.json && npm run report
+
+      - name: Run production tests
+        if: github.ref != 'refs/heads/staging'
         uses: nick-invision/retry@v2
         with:
           timeout_minutes: 20
