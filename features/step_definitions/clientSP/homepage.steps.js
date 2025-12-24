@@ -186,9 +186,10 @@ Then('I should see the menu item {string}', { timeout: 100 * 1000 }, async funct
     await this.page.screenshot({ path: 'test-results/permission-error.png' });
     throw new Error('Site access blocked in CI environment. Check network/firewall settings.');
   }
-
+  // Wait for the locator to appear (improves reliability)
   const locator = this.page.locator(`text="${menuItem}"`);
-  await expect((locator).first()).toBeVisible();
+  await locator.first().waitFor({ state: 'visible', timeout: 10000 });
+  await expect(locator.first()).toBeVisible();
 });
 // Check footer display
 Then('I should see the footer displayed correctly', async function () {
