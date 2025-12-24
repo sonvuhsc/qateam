@@ -179,8 +179,17 @@ Then("I should navigate to new tab with url {string} in case not login", async f
 });
 // Check menu display
 Then('I should see the menu item {string}', { timeout: 100 * 1000 }, async function (menuItem) {
+  // Check if page shows "No Permission" (common in CI environments)
+  const noPermission = this.page.locator('text=/No Permission|Access Denied|Forbidden/i');
+  if (await noPermission.isVisible({ timeout: 5000 })) {
+    console.log('Page shows permission error - site may be blocking CI access');
+    await this.page.screenshot({ path: 'test-results/permission-error.png' });
+    throw new Error('Site access blocked in CI environment. Check network/firewall settings.');
+  }
+  // Wait for the locator to appear (improves reliability)
   const locator = this.page.locator(`text="${menuItem}"`);
-  await expect((locator).first()).toBeVisible();
+  await locator.first().waitFor({ state: 'visible', timeout: 10000 });
+  await expect(locator.first()).toBeVisible();
 });
 // Check footer display
 Then('I should see the footer displayed correctly', async function () {
